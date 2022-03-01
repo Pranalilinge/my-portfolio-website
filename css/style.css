@@ -1,20 +1,18 @@
 /*
 Colors used:
-Primary Color (light  grey): #AAAAAA;
-(grey): #333333;
-(black):#000000;
-Secondary Color (blue): #4A02E7;
+Primary Color (white): #ffffff;
+primary color (grey) : #333333
+primary color (dark grey) : #AAAAAA
+Secondary Color (Green): #4A02E7;
 */
+
 body {
-  font-family: 'Roboto', sans-serif;
-}
-body {
-  background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #333333;
 }
 
 h1, h2, h3, h4 {
@@ -38,61 +36,119 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
+code {
+	background-color: black;
+	color: #b4d455;
+	padding: 5px;
+}
+
+/* custom logo sizing */
+#logo {
+  width: 50px;
+  height: auto;
+}
+
+/* general image responsive sizing */
 img {
   width: 100%;
 }
+
+/* Links */
 a {
   color: #333333;
   text-decoration: none; /* No underlining */
 }
-a:hover {
-  color: #4A02E7;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:visited { /* visited link */
-  color: #000000;
-}
-a:active { /* selected link */
-  color: #000000;
-}
 a:hover,
 a:focus {
-  color: #FFFFFF;
+  color: #4A02E7;
   text-decoration: underline;
 }
+
+a:visited { /* visited link */
+  /* color: #ff7f50; */
+  /* We suggest using a different color here */
+  color: gray;
+}
+a:active { /* selected link */
+  color: #4A02E7;
+}
+
+/* general buttons */
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #4A02E7;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #4A02E7; /* width of the border, type, color */
+  border-bottom: 2px solid #4A02E7;
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.5; /* Reduces the opacity of the button to 50% */
   text-decoration: none;
 }
+
 .button.contact {
-  background-color: #4A02E7;
-  color: #fffff;
+  background-color: transparent;
+  color: #333333;
   text-transform: uppercase;
   border: 2px solid #4A02E7;
 }
 
 .button.contact:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-.button.download {
   background-color: #4A02E7;
-  color: #fffff;
-  text-transform: uppercase;
-  border: 2px solid #4A02E7;
+  color: #ffffff;
 }
 
-.button.contact:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  margin: 0px;
+    text-align: center;
+  border-bottom: 3px solid #4a4a4a;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+}
+
+
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.center {
+  text-align: center;
+}
+.logo {
+  max-width: 50px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+    text-align: center;
+  color: #4a4a4a;
+}
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 50px;
 }
