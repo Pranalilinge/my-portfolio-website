@@ -7,16 +7,8 @@ Secondary Color (Green): #4A02E7;
 */
 
 body {
-<<<<<<< HEAD
   background-color: white;
-  font-family: 'Lato', sans-serif;
-=======
-  font-family: "Roboto", sans-serif;
-}
-body {
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
->>>>>>> 73c33233e16dde3825d810c80e5c5cb43d663237
+  font-family: "Lato", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -49,9 +41,9 @@ h4 {
 }
 
 code {
-	background-color: black;
-	color: #b4d455;
-	padding: 5px;
+  background-color: black;
+  color: #b4d455;
+  padding: 5px;
 }
 
 /* custom logo sizing */
@@ -70,59 +62,33 @@ a {
   color: #333333;
   text-decoration: none; /* No underlining */
 }
-<<<<<<< HEAD
+
 a:hover,
 a:focus {
-  color: #4A02E7;
+  color: #4a02e7;
   text-decoration: underline;
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   /* color: #ff7f50; */
   /* We suggest using a different color here */
   color: gray;
 }
-a:active { /* selected link */
-  color: #4A02E7;
-=======
-a:hover {
-  color: #4a02e7;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:visited {
-  /* visited link */
-  color: #000000;
-}
 a:active {
   /* selected link */
-  color: #000000;
-}
-a:hover,
-a:focus {
-  color: #ffffff;
-  text-decoration: underline;
->>>>>>> 73c33233e16dde3825d810c80e5c5cb43d663237
+  color: #4a02e7;
 }
 
 /* general buttons */
 .button {
-<<<<<<< HEAD
   display: inline-block;
-  background-color: #4A02E7;
+  background-color: #4a02e7;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #4A02E7;
-=======
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #4a02e7;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #4a02e7; /* width of the border, type, color */
->>>>>>> 73c33233e16dde3825d810c80e5c5cb43d663237
+  border-bottom: 2px solid #4a02e7;
   transition: 0.2s opacity;
 }
 
@@ -132,20 +98,14 @@ a:focus {
 }
 
 .button.contact {
-<<<<<<< HEAD
   background-color: transparent;
   color: #333333;
-=======
-  background-color: #4a02e7;
-  color: #ffffff;
->>>>>>> 73c33233e16dde3825d810c80e5c5cb43d663237
   text-transform: uppercase;
   border: 2px solid #4a02e7;
 }
 
 .button.contact:hover {
-<<<<<<< HEAD
-  background-color: #4A02E7;
+  background-color: #4a02e7;
   color: #ffffff;
 }
 
@@ -153,14 +113,12 @@ header {
   background-color: #ffffff;
   padding: 10px 0;
   margin: 0px;
-    text-align: center;
+  text-align: center;
   border-bottom: 3px solid #4a4a4a;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.38);
--moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.38);
-box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.38);
 }
-
-
 
 /* Layout styling */
 .container {
@@ -186,18 +144,8 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-text-align: center;
+  text-align: center;
   color: #4a4a4a;
-=======
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-.button.download {
-  background-color: #4a02e7;
-  color: #ffffff;
-  text-transform: uppercase;
-  border: 2px solid #4a02e7;
->>>>>>> 73c33233e16dde3825d810c80e5c5cb43d663237
 }
 #hero {
   background-color: #ffffff;
@@ -205,10 +153,9 @@ text-align: center;
   display: inline-block;
   width: 100%;
   text-align: center;
-  }
+}
 
-  #hero
-  span {
+#hero span {
   display: block;
 }
 
@@ -220,28 +167,31 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-  padding : 10px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#about-page h3 { margin-top: 0;}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
