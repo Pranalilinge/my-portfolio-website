@@ -162,6 +162,18 @@ nav > ul > li > a {
 main {
   padding-top: 100px;
 }
+
+.social-links {
+  list-style: none;
+}
+.social-links li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.social-links img {
+  width: 30px;
+  height: auto;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
