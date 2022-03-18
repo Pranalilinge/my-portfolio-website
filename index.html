@@ -4,79 +4,91 @@
 <head>
   <meta charset="utf-8">
   <!-- Setting the Viewport in HTML -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <title>UX/UI designer with background in industrial design</title>
   <!-- add normalize below -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <!-- add custom font here -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <!-- we will continue to use our style.css file for styling -->
+    <!--css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--CDN code for fontawesome hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+  </head>
 
-</head>
-
-<body>
-  <div id="about-page">
+<body id="about-page">
       <header>
-          <!-- example navigation -->
-          <nav>
+          <!-- For the navigation -->
                   <div class="container">
-              <a href="index.html"> </a>
-              <img src="img/favicon.ico.jpg" class="logo" alt="Pranali Linge">
-              <ul class="navigation">
-                <li>
-                  <a class="menu-link" href="work.html">Work</a>
-                </li>
-                <li>
-                  <a class="menu-link" href="about.html">About</a>
-                </li>
-                <li>
-                  <a class="menu-link" href="#contact">Contact</a>
-                </li>
+                    <div class="navtoggle" id="myNavtoggle">
+                      <!-- Toggle for menu icon -->
+                      <img src="img/favicon.ico.jpg" class="logo" alt="Pranali Linge">
+            <nav>
+                <ul class="navigation">
+                  <li><a href="index.html">Projects</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                  <!-- Hamburger menu icon -->
               </ul>
           </nav>
+        </div>
+      </div>
           <!-- example navigation end -->
       </header>
 
+        <!-- For the hero section -->
       <main>
         <div id="hero">
           <div class="container">
-          <span>  <h1> Hello I’m Pranali Linge, a UX/UI designer with a background in Industrial design.</h1></span>
+    <h1> <span> Hello I’m Pranali Linge, a UX/UI designer with a background in Industrial design.</span></h1>
             <p>Experienced in communicating ideas and empathizing with people to create user-centric design solutions. I
               completed my UX design course with specialization in
               frontend development at Career foundry, Berlin. I’m currently looking for career opportunities, where I
               can thrive in my
               role and continue to grow as a UI/UX designer.</p>
-
+            </div>
+          </div>
+          <!--end of hero section-->
+              <!--beginning of whole 'My Work' section block-->
             <div id="work">
               <div class="container">
 
                 <h3>My Work</h3>
                 <div class="row">
                   <div class="column col-md-6 col-lg-7">
+                        <!--left column with image-->
                     <picture>
-                      <source srcset="img/evermind/evermind@2x.jpg">
+                      <source srcset="img/evermind/evermind@2x.jpg" media="(max-width:767px)">
                       <img src="img/evermind/evermind@2x.jpg" alt="evermind">
                     </picture>
                   </div>
+                   <!--end of image column-->
                     <div class="column col-md-6 col-lg-5">
+                       <!--open column for text-->
                     <h3>Evermind</h3>
                     <p> With Evermind, you can find quick audio and video guides of exercises for anxiety, sleep issues,
                       stress, and boosting your self-esteem. The application taught the importance of all the user
                       research phases on application design and it’s imapct.</p>
                     <a href="evermind.html" class="button">Read more</a>
                   </div>
+                       <!--end of text column-->
                 </div>
+                <!--end of row that holds 2 columns for Evermind-->
+
                 <div class="row">
                       <div class="column col-md-6 col-lg-7"
+                      <!--left column with image-->
                     <picture>
-                      <source srcset="img\maimilk\Maimilk_brief@1x.png">
+                      <source srcset="img\maimilk\Maimilk_brief@1x.png" media="(max-width:767px)">
                       <img src="img\maimilk\Maimilk_brief@1x.png" alt="maimilk">
                     </picture>
                   </div>
+                  <!--end of image column-->
                   <div class="column col-md-6 col-lg-5">
+                    <!--open column for text-->
                     <h3>Maimilk</h3>
                     <p>Mai milk was one of the largest dairy farms in central India. They produce farm fresh milk and
                       milk cows at an automated milking parlor. They want to bring their farm fresh milk straight from
@@ -84,7 +96,7 @@
                     <a href="" class="button">Read more</a>
                   </div>
                 </div>
-      </main>
+
       <picture>
       <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -686,7 +698,8 @@
         </g>
     </svg>
 </picture>
-      <footer>
+  </main>
+      <footer id="contact">
         <div class="container">
           <h3>Get in Touch</h3>
           <p>
@@ -715,7 +728,8 @@
             <p>Copyright Pranali Linge 2022</p>
           </div>
       </footer>
-      <script src="js/scripts.js"></script>
-</body>
 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body><!-- end of body page -->
 </html>
