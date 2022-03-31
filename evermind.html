@@ -2,42 +2,41 @@
 <html lang"eng" dir"ltr">
 
 <head>
-	<meta charset="utf-8">
-	<!-- Setting the Viewport in HTML -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <!-- Setting the Viewport in HTML -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>UX/UI designer with background in industrial design</title>
-	<!-- add normalize below -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-	<!-- add custom font here -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<!-- we will continue to use our style.css file for styling -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+  <title>UX/UI designer with background in industrial design</title>
+  <!-- add normalize below -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- add custom font here -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <!-- we will continue to use our style.css file for styling -->
+  <!--css stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--CDN code for fontawesome hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-	<header>
-		<div class="container">
-			<!-- example navigation -->
-			<nav>
-				<div>
-					<a href="index.html"> </a>
-					<img src="img/favicon.ico.jpg" class="logo" alt="Pranali Linge">
-					<ul class="navigation">
-						<li>
-							<a class="menu-link" href="work.html">Work</a>
-						</li>
-						<li>
-							<a class="menu-link" href="about.html">About</a>
-						</li>
-						<li>
-							<a class="menu-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-			</nav>
-			<!-- example navigation end -->
-
+<body id="about-page">
+  <header>
+    <!-- For the navigation -->
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <!-- Toggle for menu icon -->
+        <img src="img/favicon.ico.jpg" class="logo" alt="Pranali Linge">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <!-- Hamburger menu icon -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- example navigation end -->
   </header>
 
   <main>
@@ -75,7 +74,7 @@
     <div>
       <h3>Process</h3>
       <picture>
-				<source srcset="img/evermind/evermind_process@1x.png" media="(max-width:767px)">
+        <source srcset="img/evermind/evermind_process@1x.png" media="(max-width:767px)">
         <img src="img/evermind/evermind_process@1x.png" alt="Evermind">
       </picture>
     </div>
@@ -85,8 +84,8 @@
       <li> Talkspace</li>
       <li>Calm</li>
 
-        <source srcset="img/evermind/evermind_CA talkspace@1x.png" media="(max-width:767px)">
-        <img src="img/evermind/evermind_CA talkspace@1x.png" alt="Talkspace">
+      <source srcset="img/evermind/evermind_CA talkspace@1x.png" media="(max-width:767px)">
+      <img src="img/evermind/evermind_CA talkspace@1x.png" alt="Talkspace">
       </picture>
       <div>
         <picture>
@@ -138,7 +137,7 @@
         <picture>
           <source srcset="img/evermind/evermind_cardsorting@1x.png" media="(max-width:767px)">
           <img src="img/evermind/evermind_cardsorting@1x.png" alt="Cardsorting">
-</picture>
+        </picture>
       </div>
       <div>
         <h3>Prototypes</h3>
@@ -199,35 +198,35 @@
       </div>
   </main>
 
-	<footer>
-		<div class="container">
-			<h3>Get in Touch</h3>
-			<p>
-				Do you like my work and want to discuss opportunities?</p>
-			<div>
-				<a href="mailto:pranaliplinge@gmail.com" class="button contact">Send me an email</a>
-				<ul class="social-links">
-					<!--Social Media Layout and Placeholders-->
-					<li>
-						<a href="https://www.linkedin.com/in/pranalilinge/" target="_blank">
-							<img src="img/socialmedia/linkedin.png" alt="linkedin">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.behance.net/pranali3" target="_blank">
-							<img src="img/socialmedia/behance.png" alt="behance">
-						</a>
-					</li>
+  <footer>
+    <div class="container">
+      <h3>Get in Touch</h3>
+      <p>
+        Do you like my work and want to discuss opportunities?</p>
+      <div>
+        <a href="mailto:pranaliplinge@gmail.com" class="button contact">Send me an email</a>
+        <ul class="social-links">
+          <!--Social Media Layout and Placeholders-->
+          <li>
+            <a href="https://www.linkedin.com/in/pranalilinge/" target="_blank">
+              <img src="img/socialmedia/linkedin.png" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/pranali3" target="_blank">
+              <img src="img/socialmedia/behance.png" alt="behance">
+            </a>
+          </li>
 
-					<li>
-						<a href="https://dribbble.com/pranalilinge" target="_blank">
-							<img src="img/socialmedia/dribbble.png" alt="dribble">
-						</a>
-					</li>
-				</ul>
-				<p>Copyright Pranali Linge 2022</p>
-			</div>
-	</footer>
+          <li>
+            <a href="https://dribbble.com/pranalilinge" target="_blank">
+              <img src="img/socialmedia/dribbble.png" alt="dribble">
+            </a>
+          </li>
+        </ul>
+        <p>Copyright Pranali Linge 2022</p>
+      </div>
+  </footer>
 </body>
 
 </html>
